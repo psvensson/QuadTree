@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "PS 7/23/2017 14:12",
+	"super" : "Object",
+	"category" : "QuadTree",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"y",
+		"width",
+		"height"
+	],
+	"name" : "Rect",
+	"type" : "normal"
+}

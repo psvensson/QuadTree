@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "PS 7/23/2017 14:15",
+	"super" : "TestCase",
+	"category" : "QuadTree",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rect"
+	],
+	"name" : "QuadTreeTests",
+	"type" : "normal"
+}
