@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "PS 7/25/2017 21:40",
+	"super" : "Object",
+	"category" : "QuadTree",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"root"
+	],
+	"name" : "QuadTree",
+	"type" : "normal"
+}

@@ -1,6 +1,8 @@
 as yet unclassified
-size: aSize depth: aDepth maxLeafs: aMaxLeafs maxDepth: aMaxDepth
+x: aX y: aY size: aSize depth: aDepth maxLeafs: aMaxLeafs maxDepth: aMaxDepth
 	^ self new
+		x: aX;
+		y: aY;
 		size: aSize;
 		depth: aDepth;
 		maxLeafs: aMaxLeafs;
