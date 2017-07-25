@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "PS 7/24/2017 20:05",
+	"super" : "Rect",
+	"category" : "QuadTree",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"size",
+		"depth",
+		"maxDepth",
+		"maxLeafs",
+		"leafs",
+		"q1",
+		"q2",
+		"q3",
+		"q4"
+	],
+	"name" : "Node",
+	"type" : "normal"
+}

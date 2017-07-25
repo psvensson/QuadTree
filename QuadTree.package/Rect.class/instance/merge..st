@@ -13,6 +13,5 @@ merge: rect
 	y + height > (rect y + rect height)
 		ifTrue: [ newHeight := y - newY + height ]
 		ifFalse: [ newHeight := rect y - y + rect height ].
-	newRect := Rect new.
-	newRect x: newX; y: newY; width: newWidth; height: newHeight .
-	^ newRect .	
+	newRect := Rect x: newX y: newY width: newWidth height: newHeight.
+	^ newRect

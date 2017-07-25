@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PS 7/24/2017 19:59",
+	"super" : "Rect",
+	"category" : "QuadTree",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"data",
+		"rect"
+	],
+	"name" : "Leaf",
+	"type" : "normal"
+}
