@@ -7,29 +7,29 @@ split
 		y: y
 		size: halfSize
 		depth: depth + 1
-		maxDepth: maxDepth
-		maxLeafs: maxLeafs.
+		maxLeafs: maxDepth
+		maxDepth: maxLeafs.
 	q2 := Node
 		x: x + halfSize
 		y: y
 		size: halfSize
 		depth: depth + 1
-		maxDepth: maxDepth
-		maxLeafs: maxLeafs.
+		maxLeafs: maxDepth
+		maxDepth: maxLeafs.
 	q3 := Node
 		x: x
 		y: y + halfSize
 		size: halfSize
 		depth: depth + 1
-		maxDepth: maxDepth
-		maxLeafs: maxLeafs.
+		maxLeafs: maxDepth
+		maxDepth: maxLeafs.
 	q4 := Node
 		x: x + halfSize
 		y: y + halfSize
 		size: halfSize
 		depth: depth + 1
-		maxDepth: maxDepth
-		maxLeafs: maxLeafs.
+		maxLeafs: maxDepth
+		maxDepth: maxLeafs.
 	newLeafs := leafs copy.
 	leafs := nil.
 	^ newLeafs
