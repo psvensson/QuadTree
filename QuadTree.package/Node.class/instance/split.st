@@ -30,6 +30,7 @@ split
 		depth: depth + 1
 		maxLeafs: maxDepth
 		maxDepth: maxLeafs.
+		leafs do: [ :l | self insertLeaf: l ].
 	newLeafs := leafs copy.
 	leafs := nil.
 	^ newLeafs
