@@ -4,6 +4,8 @@ x: aX y: aY size: aSize depth: aDepth maxLeafs: aMaxLeafs maxDepth: aMaxDepth
 		x: aX;
 		y: aY;
 		size: aSize;
+		width: aSize;
+		height: aSize;
 		depth: aDepth;
 		maxLeafs: aMaxLeafs;
 		maxDepth: aMaxDepth;
