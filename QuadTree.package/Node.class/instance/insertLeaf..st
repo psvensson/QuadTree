@@ -1,19 +1,15 @@
 accessing
 insertLeaf: leaf
-	| sq1 sq2 sq3 sq4 |
-	leafs isNil
-		ifTrue: [ leafs push: leaf.
-			(depth > maxDepth) - 1 & (width > 2) & ((leafs size = maxLeafs) - 1)
+	| |
+	leafs isNotNil
+		ifTrue: [ leafs add: leaf.
+			(depth > (maxDepth - 1)) & (width > 2) & (leafs size = (maxLeafs - 1))
 				ifTrue: [ self split ] ]
-		ifFalse: [ 
-			
-			(leaf overlaps: q1)
-				ifTrue: [ q1 insertLeaf: leaf ] .
-			(leaf overlaps: q2)
-				ifTrue: [ q2 insertLeaf: leaf ]	.
-			(leaf overlaps: q3)
-				ifTrue: [ q3 insertLeaf: leaf ]	.
-			(leaf overlaps: q4)
-				ifTrue: [ q4 insertLeaf: leaf ]	.				
-					
-				]
+		ifFalse: [ (leaf overlaps: self q1)
+				ifTrue: [ self q1 insertLeaf: leaf ].
+			(leaf overlaps: self q2)
+				ifTrue: [ self q2 insertLeaf: leaf ].
+			(leaf overlaps: self q3)
+				ifTrue: [ self q3 insertLeaf: leaf ].
+			(leaf overlaps: self q4)
+				ifTrue: [ self q4 insertLeaf: leaf ] ]
