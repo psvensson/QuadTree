@@ -1,6 +1,6 @@
 accessing
 getLeaf: rect data: data
 	| results |
-	results := Array new.
+	results := OrderedCollection  new.
 	^ self getLeaf: results rect: rect data: data.
 	
