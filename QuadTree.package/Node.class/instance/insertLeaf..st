@@ -1,9 +1,12 @@
 accessing
 insertLeaf: leaf
-	| |
+	| isNotTooDeep wideEnough tooManyLeafs |
 	leafs isNotNil
 		ifTrue: [ leafs add: leaf.
-			(depth > (maxDepth - 1)) & (width > 2) & (leafs size = (maxLeafs - 1))
+			isNotTooDeep := depth < (maxDepth - 1).
+			wideEnough := width > 2.
+			tooManyLeafs := leafs size = maxLeafs.
+			isNotTooDeep & wideEnough & tooManyLeafs
 				ifTrue: [ self split ] ]
 		ifFalse: [ (leaf overlaps: self q1)
 				ifTrue: [ self q1 insertLeaf: leaf ].
