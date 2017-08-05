@@ -1,3 +1,4 @@
 accessing
 empty: q
-	^ q leafs isNil | (q leafs size > 1) 
+	q isNil ifTrue: [ ^ true ]
+	ifFalse: [ ^ q leafs isNil | (q leafs size > 1) ]

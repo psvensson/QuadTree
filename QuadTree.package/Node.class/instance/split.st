@@ -1,6 +1,9 @@
 accessing
 split
 	| halfSize newLeafs |
+	Transcript
+		show: 'split ',self asString;
+		cr.
 	halfSize := width / 2.
 	q1 := Node
 		x: x
@@ -33,5 +36,4 @@ split
 	newLeafs := leafs copy.
 	leafs := nil.
 	newLeafs do: [ :l | self insertLeaf: l ].
-	
 	^ newLeafs

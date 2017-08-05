@@ -1,16 +1,26 @@
 accessing
 getLeaf: results rect: rect data: data
-	leafs isNotNil
+	Transcript
+		show: 'getLeaf for ' , rect asString , ' q1 isNil = ' , q1 isNil asString , ' leafs size is ' , leafs size asString;
+		cr.
+	q1 isNil
 		ifTrue: [ leafs
-				do: [ :leaf | 
-					(leaf overlaps: rect) & (data isNil | (leaf data = data))
-						ifTrue: [ results add: leaf ] ] ]
+				do: [ :l | 
+					| overlap |
+					overlap := l overlaps: rect.
+					Transcript show: 'leafe ' , l asString , ' overlaps ' , rect asString.
+					overlap & (data isNil | (l data = data))
+						ifTrue: [ results add: l ] ] ]
 		ifFalse: [ (q1 overlaps: rect)
-				ifTrue: [ q1 getLeaf: results rect: rect data: data ].
+				ifTrue: [ Transcript show: rect asString , ' overlaps ' , q1 asString.
+					q1 getLeaf: results rect: rect data: data ].
 			(q2 overlaps: rect)
-				ifTrue: [ q2 getLeaf: results rect: rect data: data ].
+				ifTrue: [ Transcript show: rect asString , ' overlaps ' , q2 asString.
+					q2 getLeaf: results rect: rect data: data ].
 			(q3 overlaps: rect)
-				ifTrue: [ q3 getLeaf: results rect: rect data: data ].
+				ifTrue: [ Transcript show: rect asString , ' overlaps ' , q3 asString.
+					q3 getLeaf: results rect: rect data: data ].
 			(q4 overlaps: rect)
-				ifTrue: [ q4 getLeaf: results rect: rect data: data ] ].
+				ifTrue: [ Transcript show: rect asString , ' overlaps ' , q4 asString.
+					q4 getLeaf: results rect: rect data: data ] ].
 	^ results
