@@ -1,9 +1,9 @@
 accessing
 split
 	| halfSize newLeafs |
-	Transcript
+	"Transcript
 		show: 'split ' , self asString;
-		cr.
+		cr."
 	halfSize := width / 2.
 	q1 := Node
 		x: x
@@ -35,5 +35,4 @@ split
 		maxDepth: maxLeafs.
 	newLeafs := leafs copy.
 	leafs := nil.
-	newLeafs do: [ :l | self insertLeaf: l ].
-	^ newLeafs
+	newLeafs do: [ :l | self insertLeaf: l ]

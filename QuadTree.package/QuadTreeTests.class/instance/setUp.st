@@ -1,6 +1,8 @@
 setup - tear down
 setUp
 	rect := Rect new.
+	"x, y, size, depth, maxDepth, maxLeafs"
+	"0, 0, 128, 0, 2, 2"
 	node := Node
 		x: 0
 		y: 0
@@ -34,4 +36,9 @@ setUp
 		y: -128
 		width: 128
 		height: 128.
-	quadTree := QuadTree size: 128 maxLeafs: 4 maxDepth: 16 x: 0 y: 0.	
+	quadTree := QuadTree
+		size: 128
+		maxLeafs: 4
+		maxDepth: 16
+		x: 0
+		y: 0

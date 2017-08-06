@@ -5,12 +5,12 @@ insertLeaf: leaf
 		ifTrue: [ leafs add: leaf.
 			isNotTooDeep := depth < (maxDepth - 1).
 			wideEnough := width > 2.
-			tooManyLeafs := (leafs at: maxLeafs - 1) isNotNil.
-			Transcript
+			tooManyLeafs := leafs size = maxLeafs.
+			"Transcript
 				show:
-					'insertLeaf depth = ' , depth asString, ' maxDepth = ' , maxDepth asString , ' maxLeafs = ' , maxLeafs asString , ' leafs size = ' , leafs size asString
+					'insertLeaf depth = ' , depth asString , ' maxDepth = ' , maxDepth asString , ' maxLeafs = ' , maxLeafs asString , ' leafs size = ' , leafs size asString
 						, ' isNotTooDeep = ' , isNotTooDeep asString , ' wideEnough = ' , wideEnough asString , ' tooManyLeafs = ' , tooManyLeafs asString;
-				cr.
+				cr."
 			isNotTooDeep & wideEnough & tooManyLeafs
 				ifTrue: [ self split ] ]
 		ifFalse: [ (leaf overlaps: self q1)

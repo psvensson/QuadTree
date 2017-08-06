@@ -2,11 +2,11 @@
 	"instance" : {
 		"testNodeMerge" : "PeterSvenssn 7/29/2017 15:11",
 		"testNodeMergeMigrateLeafs" : "PeterSvensson 8/2/2017 11:58",
-		"setUp" : "PS 8/5/2017 16:56",
+		"setUp" : "PS 8/6/2017 16:54",
 		"testTrim" : "PS 7/25/2017 11:01",
 		"testHeight" : "PS 7/23/2017 14:33",
 		"testWidth" : "PS 7/23/2017 14:33",
-		"testRemoveLeaf" : "PS 8/5/2017 16:27",
+		"testRemoveLeaf" : "PS 8/6/2017 17:08",
 		"testy" : "PS 7/23/2017 14:19",
 		"testGetLeaf" : "PS 8/3/2017 20:06",
 		"testContains" : "PS 7/25/2017 10:59",

@@ -4,13 +4,13 @@
 		"initialize" : "PS 7/25/2017 11:31",
 		"mockInsertLeaf:" : "PeterSvenssn 7/30/2017 12:17",
 		"q2" : "PeterSvenssn 7/29/2017 11:31",
-		"insertLeaf:" : "PS 8/6/2017 13:25",
-		"merge" : "PS 8/5/2017 16:53",
+		"insertLeaf:" : "PS 8/6/2017 19:48",
+		"merge" : "PS 8/6/2017 19:48",
 		"getLeaf:data:" : "PS 8/3/2017 14:43",
 		"maxDepth:" : "PS 7/24/2017 20:06",
 		"getLeaf:rect:" : "PS 7/26/2017 11:18",
 		"x:y:size:depth:maxDepth:maxLeafs:" : "PS 7/24/2017 20:16",
-		"getLeaf:rect:data:" : "PS 8/5/2017 16:49",
+		"getLeaf:rect:data:" : "PS 8/6/2017 19:47",
 		"asString" : "PS 8/4/2017 20:35",
 		"q2:" : "PeterSvenssn 7/29/2017 11:31",
 		"depth" : "PS 7/24/2017 20:06",
@@ -26,10 +26,10 @@
 		"q4:" : "PeterSvenssn 7/29/2017 11:31",
 		"size1" : "PS 7/24/2017 20:06",
 		"size:" : "PS 7/24/2017 20:06",
-		"split" : "PS 8/6/2017 13:26",
+		"split" : "PS 8/6/2017 19:48",
 		"q3:" : "PeterSvenssn 7/29/2017 11:31",
 		"q4" : "PeterSvenssn 7/29/2017 11:31",
-		"removeLeaf:" : "PS 8/5/2017 16:53"
+		"removeLeaf:" : "PS 8/6/2017 19:48"
 	},
 	"class" : {
 		"x:y:size:depth:maxLeafs:maxDepth:" : "PeterSvensson 8/1/2017 16:53"
