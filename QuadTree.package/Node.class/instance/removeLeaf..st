@@ -1,10 +1,9 @@
 accessing
 removeLeaf: leaf
 	| copyleafs |
-	Transcript show: 'removeLeaf ',
-	leaf asString , ' from '
-		, self asString;
-		cr.
+	"Transcript
+		show: 'removeLeaf ' , leaf asString , ' from ' , self asString;
+		cr."
 	leafs isNotNil
 		ifTrue: [ copyleafs := leafs copy.
 			copyleafs

@@ -1,6 +1,6 @@
 accessing
 _grow: leaf
-	| lx ly lw lh rx ry rw rh d leafs |
+	| lx ly lw lh rx ry rw rh d leafs temp|
 	lx := leaf x.
 	ly := leaf y.
 	lw := leaf width.
@@ -10,28 +10,35 @@ _grow: leaf
 	rw := root width.
 	rh := root height.
 	lx < rx
-		ifTrue: [ d := (rx - lx) / rw ceiling * rw.
+		ifTrue: [ 
+			temp := (rx - lx) / rw .
+			d := temp ceiling * rw.
 			rx := rx - d.
 			rw := rw + d ].
 	ly < ry
-		ifTrue: [ d := (ry - ly) / rh ceiling * rh.
-			ry := rx - d.
+		ifTrue: [ 
+			temp := (ry - ly) / rh .
+			d := temp ceiling *rh.
+			ry := ry - d.
 			rh := rh + d ].
 	lx + lw < (rx + rw)
-		ifTrue: [ d := (lx + lw - (rx + rw)) / rw ceiling * rw.
-			rw := rw - d ].
+		ifTrue: [ 			
+			temp := (lx + lw - (rx + rw)) / rw  .
+			d := temp ceiling * rw.
+			rw := rw + d ].
 	ly + lh < (ry + rh)
-		ifTrue: [ d := (ly + lh - (ry + rh)) / rh ceiling * rh.
+		ifTrue: [
+			temp := (lx + lw - (rx + rw)) / rw.
+			 d := temp ceiling * rw .
 			rh := rh + d ].
 	leafs := OrderedCollection new.
-	leafs push: leaf.
+	leafs add: leaf.
 	root getLeaf: leafs rect: root.
 	root := Node
 		x: rx
 		y: ry
 		size: (rw max: rh)
 		depth: 0
-		maxDepth: root maxDepth - 1
-		maxLeafs: root maxLeafs.
-	leafs do: [ :l | root insertLeaf: l ]	.
-		
+		maxLeafs: root maxLeafs
+		maxDepth: root maxDepth + 1.
+	leafs do: [ :l | root insertLeaf: l ]

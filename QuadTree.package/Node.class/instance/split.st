@@ -2,7 +2,7 @@ accessing
 split
 	| halfSize newLeafs |
 	Transcript
-		show: 'split ',self asString;
+		show: 'split ' , self asString;
 		cr.
 	halfSize := width / 2.
 	q1 := Node

@@ -9,7 +9,10 @@
 		"rect",
 		"node",
 		"leafA",
-		"leafB"
+		"leafB",
+		"rectA",
+		"rectB",
+		"quadTree"
 	],
 	"name" : "QuadTreeTests",
 	"type" : "normal"

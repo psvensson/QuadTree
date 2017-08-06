@@ -1,14 +1,14 @@
 {
 	"instance" : {
 		"insert:data:" : "PS 7/26/2017 08:57",
-		"_grow:" : "PS 7/26/2017 11:22",
+		"_grow:" : "PS 8/6/2017 11:14",
 		"truncate" : "PS 7/26/2017 12:21",
 		"root" : "PS 7/25/2017 21:41",
-		"remove:data:" : "PS 7/26/2017 12:20",
-		"get:data:" : "PS 7/26/2017 11:37",
+		"remove:data:" : "PS 8/6/2017 12:44",
+		"get:data:" : "PS 8/6/2017 11:24",
 		"root:" : "PS 7/25/2017 21:41"
 	},
 	"class" : {
-		"size:maxLeafs:maxDepth:x:y:" : "PS 7/25/2017 21:47"
+		"size:maxLeafs:maxDepth:x:y:" : "PS 8/5/2017 17:44"
 	}
 }

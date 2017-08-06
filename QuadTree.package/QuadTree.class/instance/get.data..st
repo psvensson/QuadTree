@@ -21,5 +21,5 @@ get: rect data: data
 								height: l height).
 					l data isNil
 						ifFalse: [ result at: #data put: l data ] ].
-			results push: result ].
+			results add: result ].
 	^ results 	
