@@ -1,5 +1,5 @@
 accessing
-_grow: leaf
+grow: leaf
 	| lx ly lw lh rx ry rw rh d leafs temp|
 	lx := leaf x.
 	ly := leaf y.

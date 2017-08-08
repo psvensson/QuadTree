@@ -1,11 +1,11 @@
 {
 	"instance" : {
-		"insert:data:" : "PS 7/26/2017 08:57",
-		"_grow:" : "PS 8/6/2017 11:14",
+		"insert:data:" : "PS 8/8/2017 07:18",
 		"truncate" : "PS 7/26/2017 12:21",
 		"root" : "PS 7/25/2017 21:41",
-		"remove:data:" : "PS 8/6/2017 12:44",
+		"grow:" : "PS 8/8/2017 07:18",
 		"get:data:" : "PS 8/6/2017 11:24",
+		"remove:data:" : "PS 8/6/2017 12:44",
 		"root:" : "PS 7/25/2017 21:41"
 	},
 	"class" : {
