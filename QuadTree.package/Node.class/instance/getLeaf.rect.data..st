@@ -9,7 +9,7 @@ getLeaf: results rect: rect data: data
 				do: [ :l | 
 					| overlap |
 					overlap := l overlaps: rect.
-					Transcript show: 'getLeaf - leaf ' , l asString , ' overlaps ' , rect asString.
+					"Transcript show: 'getLeaf - leaf ' , l asString , ' overlaps ' , rect asString."
 					overlap & (data isNil | (l data = data))
 						ifTrue: [ results add: l ] ] ]
 		ifFalse: [ (q1 overlaps: rect)

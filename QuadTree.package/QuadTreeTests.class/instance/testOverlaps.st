@@ -1,7 +1,7 @@
 tests
 testOverlaps
 	| r1 r2 r3 r4 |
-	r1 := Rect 
+	r1 := Rect
 		x: 50
 		y: 50
 		width: 100
@@ -16,10 +16,10 @@ testOverlaps
 		y: 100
 		width: 100
 		height: 100.
-	r4 := Rect 
+	r4 := Rect
 		x: 0
 		y: 0
 		width: 100
 		height: 100.
-	self assert: (r1 overlaps: r2) equals: true.
-	self assert: (r3 overlaps: r4) equals: false
+	self assert: (r1 overlaps: r2) equals: true;
+	 assert: (r3 overlaps: r4) equals: false
