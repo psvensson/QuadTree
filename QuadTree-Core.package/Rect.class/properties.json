@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "PS 7/23/2017 14:12",
 	"super" : "Object",
-	"category" : "QuadTree",
+	"category" : "QuadTree-Core-QuadTree-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

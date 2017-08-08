@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "PS 7/23/2017 14:15",
 	"super" : "TestCase",
-	"category" : "QuadTree",
+	"category" : "QuadTree-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
