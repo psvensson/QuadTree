@@ -1,5 +1,6 @@
 setup - tear down
 setUp
+	super setUp .
 	rect := Rect new.
 	"x, y, size, depth, maxDepth, maxLeafs"
 	"0, 0, 128, 0, 2, 2"
