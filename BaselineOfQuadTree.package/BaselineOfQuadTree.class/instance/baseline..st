@@ -6,5 +6,5 @@ baseline: spec
 		do: [
 			spec 
 				package: 'QuadTree-Core';
-				package: 'QuadTree-Core-Tests' with: [ spec requires: #('QuadTree-Core') ]	
+				package: 'QuadTree-Tests-Core' with: [ spec requires: #('QuadTree-Core') ]	
 		].
